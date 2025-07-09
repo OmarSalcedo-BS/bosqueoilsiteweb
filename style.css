@@ -69,3 +69,38 @@
             color: yellow;
             background-color: #2b2a20;
         }
+
+
+     @media (max-width: 639px) { /* Extra Small devices (sm breakpoint - 1px) */
+            .carousel-slide {
+                width: 100px;
+                /* Más pequeño para móviles */
+                height: 70px;
+                margin-right: 10px;
+            }
+            .carousel-track {
+                animation-duration: 18s; /* Ajusta la velocidad para móviles */
+            }
+        }
+
+        @media (min-width: 640px) and (max-width: 767px) { /* Small devices (sm breakpoint) */
+            .carousel-slide {
+                width: 120px;
+                height: 80px;
+                margin-right: 12px;
+            }
+            .carousel-track {
+                animation-duration: 20s;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) { /* Medium devices (md breakpoint) */
+            .carousel-slide {
+                width: 140px;
+                height: 90px;
+                margin-right: 14px;
+            }
+            .carousel-track {
+                animation-duration: 22s;
+            }
+        }
