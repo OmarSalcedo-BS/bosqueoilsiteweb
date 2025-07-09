@@ -1,0 +1,71 @@
+.w-full:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.bton:hover {
+    transform: scale(1.05);
+    color: yellow;
+    background-color: #2b2a20;
+}
+
+.navbar a:hover {
+    transform: scale(1.05);
+    color: yellow;
+    background-color: #2b2a20;
+    
+}
+
+.carousel-container {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            animation: scroll 20s linear infinite; /* Ajusta la duración para más o menos velocidad */
+        }
+
+        .carousel-slide {
+            flex: 0 0 auto; /* Evita que las imágenes se estiren */
+            width: 210px; /* Ancho de cada "card" de imagen */
+            height: 180px; /* Alto de cada "card" de imagen */
+            margin-right: 16px; /* Espacio entre las imágenes */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #2b2a20; /* Fondo para las cards */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+            border-radius: 8px;
+        }
+
+        /* Animación de desplazamiento */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%); /* Desplaza el 100% del ancho del track */
+            }
+        }
+
+        /* Pausar la animación al pasar el mouse */
+        .carousel-container:hover .carousel-track {
+            animation-play-state: paused;
+        }
+
+        .btnnav:hover {
+            transform: scale(1.05);
+            color: yellow;
+            background-color: #2b2a20;
+        }
